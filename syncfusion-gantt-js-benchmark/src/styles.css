@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: #0f172a;
+  background: #f8fafc;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+button {
+  padding: 6px 12px;
+  color: #1e293b;
+  background: #fff;
+  border: 1px solid #cbd5f5;
+  border-radius: 4px;
+  font: inherit;
+  cursor: pointer;
+}
+
+button:hover:not(:disabled) {
+  color: #2563eb;
+  background: #f1f5f9;
+  border-color: #2563eb;
+}
+
+button:focus-visible {
+  outline: 3px solid rgba(37, 99, 235, 0.25);
+  outline-offset: 1px;
+}
+
+button:disabled {
+  color: #94a3b8;
+  background: #f8fafc;
+  border-color: #e2e8f0;
+  cursor: not-allowed;
+}
+
+.navigation {
+  display: flex;
+  min-height: 68px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 12px 20px;
+  color: #e2e8f0;
+  background: #0f172a;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.18);
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 auto;
+}
+
+.brand strong {
+  font-size: 16px;
+}
+
+.brand span {
+  color: #94a3b8;
+  font-size: 12px;
+}
+
+.nav-links,
+.controls,
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.nav-button {
+  color: #cbd5f5;
+  background: transparent;
+  border-color: #334155;
+  box-shadow: none;
+}
+
+.nav-button.active {
+  color: #fff;
+  background: #2563eb;
+  border-color: #2563eb;
+  font-weight: 600;
+}
+
+.page {
+  padding: 15px;
+}
+
+.page h1 {
+  margin: 0 0 14px;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.controls,
+.actions {
+  margin-top: 10px;
+}
+
+.record-status,
+.summary,
+.gantt-toolbar-note {
+  margin-top: 8px;
+  font-size: 13px;
+}
+
+.record-status {
+  display: flex;
+  gap: 5px;
+}
+
+.summary {
+  min-height: 20px;
+}
+
+.metric-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-family: monospace;
+}
+
+.muted {
+  margin-left: 10px;
+  color: #64748b;
+}
+
+.error {
+  color: #b91c1c;
+}
+
+#gantt-host {
+  margin-top: 12px;
+}
+
+@media (max-width: 900px) {
+  .navigation {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .nav-links {
+    width: 100%;
+  }
+}
