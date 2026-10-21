@@ -1,0 +1,1 @@
+# ej2-gantt-chart-performance-samples
